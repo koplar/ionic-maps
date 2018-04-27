@@ -84,6 +84,7 @@ export class HomePage {
     this.map = GoogleMaps.create(element);
   }
 
+
   // memindahkan camera location
   moveCamera(loc: LatLng) {
     let cameraOption: CameraPosition<any> = {
@@ -94,4 +95,7 @@ export class HomePage {
     this.map.moveCamera(cameraOption);
   }
 
+  openMaps() {
+    this.navCtrl.push('GooglemapsPage');
+  }
 }
