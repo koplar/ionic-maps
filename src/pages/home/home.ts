@@ -80,7 +80,8 @@ export class HomePage {
 
   initMap(): any {
     let element = this.mapElement.nativeElement;
-    this.map = this._googleMaps.create(element);
+    //this.map = this._googleMaps.create(element);
+    this.map = GoogleMaps.create(element);
   }
 
   // memindahkan camera location
